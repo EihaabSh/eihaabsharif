@@ -1,0 +1,99 @@
+body {
+    font-family: 'Orbitron', 'Nunito', sans-serif;
+
+
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    min-height: 100vh; /* Ensures the body takes up full viewport height */
+    margin: 0; /* Removes default margins */
+    color: white;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+  
+.split {
+    height: 100%; /* Full height */
+    width: 50%; /* Half width */
+    position: absolute; /* Allows scrolling */
+    top: 0;
+    overflow-y: auto; /* Adds vertical scrolling for overflowing content */
+    padding-top: 20px;
+    box-sizing: border-box; /* Includes padding in element's width and height */
+}
+  
+  .left {
+    left: 0;
+    background-color: #111;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .right {
+    right: 0;
+    background-color: light gray;
+    color: black;
+  }
+  
+  .centered {
+    margin: auto; /* Centers content */
+    text-align: left;
+    width: 80%; /* Adds some margin to avoid edge-to-edge content */
+}
+.centered1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .button1 {
+    background-color: transparent; /* Transparent background */
+    border: 2px solid white; /* White border */
+    color: white; /* White text */
+    padding: 5px 10px; /* Smaller padding */
+    font-family: 'Orbitron', sans-serif; /* Orbitron font */
+    font-size: 14px; /* Smaller font size */
+    text-align: center; /* Centers text */
+    text-decoration: none; /* Removes underline */
+    display: inline-block; /* Makes the button behave like an inline element */
+    cursor: pointer; /* Changes cursor to pointer when hovered */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.button1:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background when hovered */
+    color: #4CAF50; /* Green text on hover */
+    border-color: #4CAF50; /* Green border on hover */
+}
+
+.button1:active {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly darker background when clicked */
+    color: #388e3c; /* Darker green text when clicked */
+    border-color: #388e3c; /* Darker green border when clicked */
+}
+
+.skills-container {
+    display: flex; /* Enables flexbox layout */
+    flex-wrap: wrap; /* Allows wrapping if there’s not enough space */
+    gap: 20px; /* Adds some spacing between the items */
+    justify-content: center; /* Centers the items horizontally */
+}
+
+.skills-container p {
+    margin: 0; /* Removes any default margin around paragraphs */
+    font-size: 16px; /* Adjusts the font size */
+    padding: 2px; /* Adds padding inside the box */
+    border: 2px solid black; /* Black border around the elements */
+    background-color: transparent; /* Transparent background */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.main {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+
